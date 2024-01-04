@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+</head>
+
+<body class="index">
+  <header class="navbar navbar-expand-lg header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="media/logos/logo2.png" alt="Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="burger"><img class="bars" src="media/logos/navbars.png" alt="bar" /></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="html/main/bandas.html" class="nav-link link">bandas</a>
+          </li>
+          <li class="nav-item">
+            <a href="html/main/discos.html" class="nav-link link">Discos</a>
+          </li>
+          <li class="nav-item">
+            <a href="html/main/eventos.html" class="nav-link link">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a href="html/main/contacto.html" class="nav-link link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <aside id="carouselExampleCaptions" class="carousel slide carrusel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="media/bandas/rogerWatersShow.jpeg" class="d-block w-100 carruselImg" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carruselText">This is Not A Drill</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/bandas/thePoliceShow.jpg" class="d-block w-100 carruselImg" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+          <h5 class="carruselText">The Police</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/bandas/rollingStonesShow.webp" class="d-block w-100 carruselImg" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carruselText">It's Only Rock'n'Roll (but I  like it)</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </aside>
+
+  <main>
+    <div class="divQuienesSomos">
+      <h2>¿Quienes Somos?</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi hic
+        distinctio magnam maxime a nihil earum odio praesentium placeat
+        suscipit! Ipsum, esse saepe. Omnis, dignissimos atque quam ad rerum
+        ut! Totam illo adipisci suscipit voluptas impedit. Expedita accusamus
+        vero laboriosam aut quod possimus nihil nam molestias numquam
+        voluptatum voluptatem laborum corporis illo, eum excepturi quibusdam
+        magnam qui esse rem facere!
+      </p>
+      <img src="media/bandas/rogerWaters.jpg" alt="Roger Waters" />
+    </div>
+    <h2>Bandas Mas Escuchadas</h2>
+    <div class="divBandas">
+      <article class="banda">
+        <a href="discos/endesarollo.html" >
+          <img class="imgBanda" src="media/bandas/thedoors.webp" alt="The Doors" />
+          <h3>The Doors</h3>
+        </a>
+      </article>
+      <article class="banda">
+        <a href="discos/endesarollo.html" >
+          <img class="imgBanda" src="media/bandas/thepolice.jpg" alt="The Police" />
+          <h3>The Police</h3>
+        </a>
+      </article>
+    </div>
+    <h2>Discos Mas Escuchadas</h2>
+    <div class="divDiscos">
+      <article class="disco">
+        <a href="html/discos/anightattheopera.html">
+          <img class="imgDisco" src="media/discos/anightatthe.jpg" alt="A Night At The Opera" />
+          <h3>A Night at the Opera - Queen</h3>
+        </a>
+      </article>
+      <article class="disco">
+        <a href="html/discos/thedarksideofthemoon.html">
+          <img class="imgDisco" src="media/discos/darkside.jpg" alt="The Dark Side of the Moon" />
+          <h3>The Dark Side of the Moon - Pink Floyd</h3>
+        </a>
+      </article>
+      <article class="disco">
+        <a href="html/discos/sgtpepperslonelyheartsclubband.html">
+          <img class="imgDisco" src="media/discos/peppers.png" alt="Sgt. Pepper's Lonely Hearts Club Band" />
+          <h3>Sgt. Pepper's Lonely Hearts Club Band - The Beatles</h3>
+        </a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <h4>Outside The Wall - Todos Los Derechos Reservados</h4>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com" target="_blank"><img class="imgRedSocial" src="media/logos/instagram.png"
+            alt="" /></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com" target="_blank"><img class="imgRedSocial" src="media/logos/facebook.png"
+            alt="" /></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" target="_blank"><img class="imgRedSocial" src="media/logos/twitter.png"
+            alt="" /></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

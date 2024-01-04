@@ -1,0 +1,400 @@
+/* estilo gral */
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+body {
+  background-image: radial-gradient(circle, rgb(68, 9, 59), #251029);
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+p {
+  color: #ecaf2e;
+}
+.index header{
+  margin-bottom: -30px;
+}
+/* index gral */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+}
+h2 {
+  color: #ecaf2e;
+  font-size: 50px;
+  text-align: center;
+}
+/* header y nav */
+.logo{
+  width: 20rem;
+}
+.header{
+  background-image: linear-gradient(90deg, #251029, #51175d );
+  position: sticky;
+  top: 0px;
+  z-index: 200;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.link{
+  color: #ecaf2e;
+  font-size: 1.1rem;
+}
+.burger{
+  color: #ecaf2e;
+}
+.bars{
+  width: 50px;
+}
+nav ul li:hover{
+  background-color: #ecaf2e;
+  border-radius: 15px;
+  color: #251029;
+  font-weight: bold;
+}
+/* footer */
+
+footer h4 {
+  color: white;
+  font-size: 30px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: white 3px solid;
+  padding: 5px 15px;
+  text-align: center;
+  gap: 20px;
+}
+footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+.imgRedSocial {
+  width: 70px;
+}
+@media (min-width: 700px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  footer h4 {
+    font-size: 25px;
+  }
+
+  .imgRedSocial {
+    width: 40px;
+  }
+}
+
+/* Carrussel index */
+.carruselText{
+  font-size: 2.4rem;
+  color: #ecaf2e;
+  margin-bottom: 2rem;
+}
+.carruselImg{
+  opacity: 0.6;
+  object-fit: cover;
+  object-position: 100% 5%;
+  height: 35rem;
+}
+/* quienes somos index */
+.divQuienesSomos {
+  display: grid;
+  grid-template-areas:
+    "img"
+    "h2"
+    "p";
+  margin: 30px;
+  gap: 30px;
+  align-self: center;
+}
+.divQuienesSomos h2 {
+  grid-area: h2;
+  align-self: center;
+  justify-self: center;
+  color: #ecaf2e;
+  font-size: 50px;
+}
+.divQuienesSomos p {
+  grid-area: p;
+  color: #ecaf2e;
+  font-size: 40px;
+  text-align: center;
+}
+.divQuienesSomos img {
+  grid-area: img;
+  width: 100%;
+  border-radius: 10px;
+}
+@media (min-width: 1024px) {
+  .divQuienesSomos {
+    grid-template-areas:
+      "h2 img"
+      "p img";
+    margin: 30px;
+    row-gap: 30px;
+    align-self: center;
+  }
+
+  .divQuienesSomos p {
+    font-size: 22px;
+  }
+
+  .divQuienesSomos h2 {
+    font-size: 30px;
+  }
+}
+
+/* Bandas */
+.divBandas {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 40px;
+}
+.banda {
+  width: 550px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ecaf2e;
+  border-radius: 3px;
+}
+.banda img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.banda a {
+  font-size: 50px;
+  color: #251029;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .divBandas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banda a {
+    font-size: 40px;
+  }
+}
+.banda :hover{
+  background-color: #75540f;
+  border-radius: 3px;
+}
+.banda img:hover{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Discos */
+.divDiscos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 40px;
+}
+.disco {
+  height: 450px;
+  width: 370px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ecaf2e;
+  border-radius: 3px;
+}
+.disco img {
+  height: 370px;
+  width: auto;
+  object-fit: cover;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.disco a {
+  font-size: 50px;
+  color: #251029;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.disco a h3{
+  height: 72px;
+  padding: 0px 3px;
+}
+@media (min-width: 700px) {
+  .divDiscos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .disco a {
+    font-size: 30px;
+
+  }
+}
+@media (min-width: 1024px) {
+  .divDiscos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.disco :hover{
+background-color: #ab7a10;
+border-radius: 3px;
+}
+.disco img:hover{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+/* pag disco */
+.pagDisco {
+  display: grid;
+  grid-template-areas:
+    "img"
+    "div"
+    "aside";
+}
+.pagDisco aside {
+  grid-area: aside;
+}
+.pagDisco div {
+  grid-area: div;
+  color: #ecaf2e;
+  text-align: center;
+  align-self: center;
+}
+.pagDisco img {
+  grid-area: img;
+  width: 90%;
+  justify-self: center;
+}
+@media (min-width: 1024px) {
+  .pagDisco {
+    grid-template-areas:
+      "img div"
+      "img div"
+      "aside aside";
+  }
+  .pagDisco img {
+    width: 500px;
+  }
+}
+
+/* eventos */
+.eventos {
+  display: grid;
+  grid-template-areas:
+    "div1"
+    "img"
+    "div2"
+    "map";
+  margin: 0px 10px;
+}
+.div1 {
+  grid-area: div1;
+  text-align: center;
+  align-self: center;
+  padding: 0px 20px;
+}
+.div1 p {
+  font-size: 20px;
+}
+.eventos img {
+  grid-area: img;
+  width: 100%;
+  justify-self: center;
+}
+.div2 {
+  grid-area: div2;
+  text-align: center;
+  align-self: center;
+  padding: 0px 20px;
+}
+.div2 p {
+  font-size: 20px;
+}
+.eventos iframe {
+  grid-area: map;
+  width: 100%;
+  justify-self: center;
+}
+@media (min-width: 1024px) {
+  .eventos {
+    grid-template-areas:
+      "img div1"
+      "div2 map";
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+/* formulario */
+.contacto{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+form {
+  display: grid;
+  grid-template-areas: 
+  "nombre area"
+  "apellido area"
+  "email area"
+  "enviar borrar";
+  width: 70%;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+.nombre{
+grid-area: nombre;
+width: 100%;
+height: 50px;
+}
+.apellido{
+grid-area: apellido;
+width: 100%;
+height: 50px;
+}
+.email{
+grid-area: email;
+width: 100%;
+height: 50px;
+}
+.area{
+grid-area: area;
+width: 100%;
+}
+.area textarea{
+width: 100%;
+height: auto;
+}
+.button1{
+grid-area: enviar;
+width: 100%;
+}
+.button2{
+grid-area: borrar;
+width: 100%;
+}
+label {
+  color: #ecaf2e;
+}
+input {
+  border-radius: 4px;
+  border: black 1px solid;
+  width: 100%;
+}
