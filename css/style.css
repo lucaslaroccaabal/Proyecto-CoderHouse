@@ -166,6 +166,7 @@ footer ul li {
   row-gap: 40px;
 }
 .banda {
+  height: 100%;
   width: 90%;
   text-align: center;
   text-decoration: none;
@@ -173,14 +174,13 @@ footer ul li {
   border-radius: 3px;
 }
 .banda img {
-  height: 50%;
+  height: 220px;
   width: 100%;
   object-fit: cover;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
 .banda a {
-  font-size: 50px;
   color: #251029;
   text-align: center;
   text-decoration: none;
@@ -188,18 +188,22 @@ footer ul li {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 1024px) {
+.banda a h3{
+  font-size: 1.2rem;
+}
+@media (min-width: 600px) {
   .divBandas {
     grid-template-columns: 1fr 1fr;
   }
-
-  .banda a {
-    font-size: 40px;
+}
+@media (min-width: 1024px) {
+  .divBandas {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.banda :hover{
-  background-color: #75540f;
-  border-radius: 3px;
+.dbanda :hover{
+background-color: #ab7a10;
+border-radius: 3px;
 }
 .banda img:hover{
   border-bottom-left-radius: 0px;
@@ -229,7 +233,6 @@ footer ul li {
   border-top-left-radius: 3px;
 }
 .disco a {
-  font-size: 50px;
   color: #251029;
   text-align: center;
   text-decoration: none;
@@ -238,22 +241,22 @@ footer ul li {
   justify-content: space-between;
 }
 .disco a h3{
-  height: 72px;
-  padding: 0px 3px;
+  height: 40px;
+  font-size: 1.2rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 400px) {
   .divDiscos {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
   }
-
-  .disco a {
-    font-size: 30px;
-
+}
+@media (min-width: 767px) {
+  .divDiscos {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1024px) {
   .divDiscos {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 .disco :hover{
