@@ -64,7 +64,7 @@ nav ul li:hover{
 
 footer h4 {
   color: white;
-  font-size: 30px;
+  font-size: 1rem;
 }
 footer {
   display: flex;
@@ -80,7 +80,7 @@ footer ul li {
   display: inline-block;
 }
 .imgRedSocial {
-  width: 40px;
+  width: 30px;
 }
 @media (min-width: 700px) {
   footer {
@@ -100,15 +100,15 @@ footer ul li {
 
 /* Carrussel index */
 .carruselText{
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #ecaf2e;
   margin-bottom: 2rem;
 }
 .carruselImg{
-  opacity: 0.6;
+  opacity: 0.8;
   object-fit: cover;
-  object-position: 100% 5%;
-  height: 35rem;
+  object-position: 100% 0%;
+  height: 40vw;
 }
 /* quienes somos index */
 .divQuienesSomos {
@@ -166,14 +166,14 @@ footer ul li {
   row-gap: 40px;
 }
 .banda {
-  width: 550px;
+  width: 90%;
   text-align: center;
   text-decoration: none;
   background-color: #ecaf2e;
   border-radius: 3px;
 }
 .banda img {
-  height: 300px;
+  height: 50%;
   width: 100%;
   object-fit: cover;
   border-top-right-radius: 3px;
@@ -214,16 +214,16 @@ footer ul li {
   row-gap: 40px;
 }
 .disco {
-  height: 450px;
-  width: 370px;
+  height: 100%;
+  width: 90%;
   text-align: center;
   text-decoration: none;
   background-color: #ecaf2e;
   border-radius: 3px;
 }
 .disco img {
-  height: 370px;
-  width: auto;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -354,9 +354,10 @@ border-radius: 3px;
 form {
   display: grid;
   grid-template-areas: 
-  "nombre area"
-  "apellido area"
-  "email area"
+  "nombre nombre"
+  "apellido apellido"
+  "email email"
+  "area area"
   "enviar borrar";
   width: 70%;
   align-items: center;
@@ -402,3 +403,20 @@ input {
   border: black 1px solid;
   width: 100%;
 }
+ form input:focus{
+background-color: rgb(223, 223, 223);
+border: none;
+ }
+ form textarea:focus{
+  background-color: rgb(223, 223, 223);
+  border: none;
+ }
+ @media(min-width: 760px){
+  form{
+    grid-template-areas: 
+    "nombre area"
+    "apellido area"
+    "email area"
+    "enviar borrar";
+  }
+ }
