@@ -28,7 +28,7 @@ main {
 }
 h2 {
   color: #ecaf2e;
-  font-size: 50px;
+  font-size: 2rem;
   text-align: center;
 }
 /* header y nav */
@@ -46,6 +46,7 @@ h2 {
 .link{
   color: #ecaf2e;
   font-size: 1.1rem;
+  padding: 4px 7px;
 }
 .bars{
   width: 35px;
@@ -64,7 +65,8 @@ nav ul li:hover{
 
 footer h4 {
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 footer {
   display: flex;
@@ -80,7 +82,8 @@ footer ul li {
   display: inline-block;
 }
 .imgRedSocial {
-  width: 30px;
+  width: 25px;
+margin: 0px 10px;
 }
 @media (min-width: 700px) {
   footer {
@@ -90,7 +93,8 @@ footer ul li {
   }
 
   footer h4 {
-    font-size: 25px;
+    font-size: 1.2;
+    margin-top: 0px;
   }
 
   .imgRedSocial {
@@ -110,6 +114,8 @@ footer ul li {
   object-position: 100% 0%;
   height: 40vw;
 }
+
+
 /* quienes somos index */
 .divQuienesSomos {
   display: grid;
@@ -126,12 +132,12 @@ footer ul li {
   align-self: center;
   justify-self: center;
   color: #ecaf2e;
-  font-size: 50px;
+  font-size: 2rem;
 }
 .divQuienesSomos p {
   grid-area: p;
   color: #ecaf2e;
-  font-size: 40px;
+  font-size: 0.8rem;
   text-align: center;
 }
 .divQuienesSomos img {
@@ -139,22 +145,14 @@ footer ul li {
   width: 100%;
   border-radius: 10px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
   .divQuienesSomos {
     grid-template-areas:
-      "h2 img"
-      "p img";
+      "h2 img img"
+      "p img img";
     margin: 30px;
     row-gap: 30px;
     align-self: center;
-  }
-
-  .divQuienesSomos p {
-    font-size: 22px;
-  }
-
-  .divQuienesSomos h2 {
-    font-size: 30px;
   }
 }
 
@@ -201,7 +199,7 @@ footer ul li {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.dbanda :hover{
+.banda :hover{
 background-color: #ab7a10;
 border-radius: 3px;
 }
@@ -267,7 +265,14 @@ border-radius: 3px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
+
+
+
 /* pag disco */
+.tituloDisco{  
+  color: #ecaf2e;
+  text-align: center;
+}
 .pagDisco {
   display: grid;
   grid-template-areas:
@@ -283,22 +288,27 @@ border-radius: 3px;
   color: #ecaf2e;
   text-align: center;
   align-self: center;
+  padding: 10px 40px;
 }
 .pagDisco img {
   grid-area: img;
-  width: 90%;
+  width: 50%;
   justify-self: center;
+  margin: 10px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px)  {
   .pagDisco {
+    display: grid;
     grid-template-areas:
       "img div"
       "img div"
       "aside aside";
+
   }
-  .pagDisco img {
-    width: 500px;
+  .pagDisco img{
+    width: 400px;
   }
+
 }
 
 /* eventos */
@@ -309,16 +319,16 @@ border-radius: 3px;
     "img"
     "div2"
     "map";
-  margin: 0px 10px;
+  margin: 0px 20px;
 }
 .div1 {
   grid-area: div1;
   text-align: center;
   align-self: center;
-  padding: 0px 20px;
+  padding: 0px 5px;
 }
 .div1 p {
-  font-size: 20px;
+  font-size: 0.8rem;
 }
 .eventos img {
   grid-area: img;
@@ -329,23 +339,30 @@ border-radius: 3px;
   grid-area: div2;
   text-align: center;
   align-self: center;
-  padding: 0px 20px;
+  padding: 0px 5px;
 }
 .div2 p {
-  font-size: 20px;
+  font-size: 0.8rem;
 }
 .eventos iframe {
   grid-area: map;
   width: 100%;
   justify-self: center;
+
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .eventos {
     grid-template-areas:
       "img div1"
       "div2 map";
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .div2 p {
+    font-size: 1rem;
+  }
+  .div1 p {
+    font-size: 1rem;
   }
 }
 /* formulario */
