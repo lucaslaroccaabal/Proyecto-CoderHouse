@@ -1,0 +1,56 @@
+@media (min-width: 400px) {
+  .divDiscos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .divDiscos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .divBandas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 767px) {
+  form {
+    grid-template-areas:
+      "nombre area"
+      "apellido area"
+      "email area"
+      "enviar borrar";
+  }
+
+  .eventos {
+    grid-template-areas:
+      "img div1"
+      "div2 map";
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .divDiscos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .divBandas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  .divQuienesSomos {
+    grid-template-areas:
+      "h2 img img"
+      "p img img";
+    margin: 30px;
+    row-gap: 30px;
+    align-self: center;
+  }
+}

@@ -1,0 +1,46 @@
+/* eventos */
+
+.eventos {
+  display: grid;
+  grid-template-areas: "div1" "img" "div2" "map";
+  margin: 0px 20px;
+}
+
+.div1 {
+  grid-area: div1;
+  text-align: center;
+  align-self: center;
+  padding: 0px 5px;
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.eventos img {
+  grid-area: img;
+  width: 100%;
+  justify-self: center;
+}
+
+.div2 {
+  grid-area: div2;
+  text-align: center;
+  align-self: center;
+  padding: 0px 5px;
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.eventos iframe {
+  grid-area: map;
+  width: 100%;
+  justify-self: center;
+}
+
+.div2 p,
+.div1 p {
+  font-size: 1rem;
+}

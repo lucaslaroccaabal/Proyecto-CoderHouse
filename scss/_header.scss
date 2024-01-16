@@ -1,0 +1,37 @@
+/* header y nav */
+
+.logo {
+  width: 200px;
+}
+
+.header {
+  background-image: linear-gradient(90deg, $color2, #51175d);
+  position: sticky;
+  top: 0px;
+  z-index: 200;
+  width: 100%;
+  margin-bottom: 20px;
+  height: $headerVh;
+}
+
+.link {
+  color: $color1;
+  font-size: 1.1rem;
+  padding: 4px 7px;
+}
+
+.bars {
+  width: 35px;
+}
+
+.navBarButton {
+  padding: 0px;
+  border: 0px;
+}
+
+nav ul li:hover {
+  background-color: $color1;
+  border-radius: 15px;
+  color: $color2;
+  font-weight: bold;
+}

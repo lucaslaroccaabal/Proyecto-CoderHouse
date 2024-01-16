@@ -1,0 +1,16 @@
+/* Carrussel index */
+.carruselText {
+  font-size: 2rem;
+  color: $color1;
+  margin-bottom: 2rem;
+}
+
+.carruselImg {
+  opacity: 0.8;
+  object-fit: cover;
+  object-position: 100% 50%;
+  height: 100vh - $headerVh;
+}
+.carrusel {
+  margin-top: -50px;
+}

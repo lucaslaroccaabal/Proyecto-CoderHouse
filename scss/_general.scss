@@ -1,0 +1,32 @@
+/* estilo gral */
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+body {
+  background-image: radial-gradient(circle, rgb(68, 9, 59), $color2);
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  color: $color1;
+}
+
+h2 {
+  color: $color1;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.index {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+}
