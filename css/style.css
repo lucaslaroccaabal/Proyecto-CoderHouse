@@ -159,17 +159,57 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.carruselImg {
-  opacity: 0.8;
-  object-fit: cover;
-  object-position: 100% 50%;
-  height: 85vh;
-}
-
 .carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: -50px;
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  animation-name: carrusel;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  background-position: 50% 50%;
+}
+.carrusel h2 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 10px;
 }
 
+@keyframes carrusel {
+  0% {
+    background-image: url(../media/bandas/carrusel1.jpg);
+    transition: none;
+  }
+  16% {
+    background-image: url(../media/bandas/carrusel2.jpg);
+    transition: none;
+  }
+  32% {
+    background-image: url(../media/bandas/carrusel3.jpg);
+    transition: none;
+  }
+  50% {
+    background-image: url(../media/bandas/carrusel4.jpg);
+    transition: none;
+  }
+  66% {
+    background-image: url(../media/bandas/carrusel5.jpg);
+    transition: none;
+  }
+  82% {
+    background-image: url(../media/bandas/carrusel6.jpg);
+    transition: none;
+  }
+  100% {
+    background-image: url(../media/bandas/carrusel1.jpg);
+    transition: none;
+  }
+}
 /* header y nav */
 .logo {
   width: 200px;
