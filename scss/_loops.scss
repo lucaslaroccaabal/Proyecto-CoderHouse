@@ -1,0 +1,8 @@
+
+
+@for $i from 1 through $nroCarrusel{
+    .carrusel img:nth-child(#{$i}){
+        animation: carrusel 5s linear infinite;
+        animation-delay: 1s * $i - 1s;
+    }
+}

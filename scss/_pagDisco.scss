@@ -1,0 +1,103 @@
+/* pag disco */
+
+.tituloDisco {
+    color: $color1;
+    text-align: center;
+}
+
+.pagDisco {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "titulo" "img" "div" "banda" "aside";
+
+    h1 {
+        grid-area: titulo;
+        background-color: $color1;
+        color: $color2;
+        border-radius: 20px;
+        font-size: 2.3rem;
+        padding: auto;
+        height: 100%;
+    }
+
+    img {
+        grid-area: img;
+        width: 50%;
+        justify-self: center;
+        margin: 10px;
+        background-color: $color1;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .origenes {
+        grid-area: div;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $color1;
+        background-color: $color1;
+        border-radius: 20px;
+        padding: auto;
+        height: 100%;
+        p{
+            color: $color2;
+        }
+        h4{
+            color: $color2;
+        }
+    }
+
+    .bandaDisco {
+        grid-area: banda;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color1;
+        border-radius: 20px;
+        padding: auto;
+        height: 100%;
+        p{
+            color: $color2;
+        }
+        h4{
+            color: $color2;
+        }
+
+    }
+
+    aside {
+        grid-area: aside;
+        border-radius: 20px;
+        padding: auto;
+        height: 100%;
+    }
+}
+
+@media (min-width: 767px) {
+    .pagDisco {
+        margin: 2% 5%;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 
+        " titulo titulo"
+        "img div "
+        "img div"  
+        "banda aside";
+align-content: center;
+
+
+    }
+}
+@media (min-width: 1024px) {
+    .pagDisco {
+        margin: 2% 5%;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
+        grid-template-areas: 
+        "img img img titulo titulo titulo"
+        "img img img div div banda"
+        "img img img div div aside";
+
+    }
+}

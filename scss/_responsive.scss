@@ -54,3 +54,12 @@
     align-self: center;
   }
 }
+@media(max-width: 991px){
+nav{
+  background-image: linear-gradient(90deg, $color2, #51175d);
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+}
