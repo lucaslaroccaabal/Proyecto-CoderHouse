@@ -147,7 +147,7 @@ h4 {
   position: absolute;
   top: 0;
   object-fit: cover;
-  object-position: 50% 10%;
+  object-position: 25% 10%;
   filter: grayscale(1);
   z-index: -10;
 }
