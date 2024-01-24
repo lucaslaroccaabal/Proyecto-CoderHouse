@@ -10,43 +10,42 @@
 .disco {
   height: 100%;
   width: 90%;
-  text-align: center;
   text-decoration: none;
   background-color: $color1;
   border-radius: 3px;
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-  }
+  transition: all 0.4s;
 
   a {
-    color: $color2;
-    text-align: center;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      filter: grayscale(0.5);
+      transition: all 0.4s;
+    }
 
     h3 {
-      height: 40px;
-      font-size: 1.2rem;
+      text-align: center;
+      color: $color2;
+      font-size: 1.3rem;
+      word-spacing: 1px;
     }
   }
-
-  :hover {
-    background-color: #ab7a10;
-    border-radius: 3px;
+}
+.disco:hover {
+  background-color: $color4;
+  border-radius: 3px;
+  img {
+    filter: none;
   }
-
-  img:hover {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  h3 {
+    font-weight: 800;
   }
 }
-
-
-

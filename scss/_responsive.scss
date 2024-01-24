@@ -12,9 +12,19 @@
   .divBandas {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .pagDisco {
+    margin: 2% 5%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
+    grid-template-areas:
+      "img img img titulo titulo titulo"
+      "img img img div div banda"
+      "img img img div div aside";
+  }
 }
 
-@media(min-width: 767px) {
+@media (min-width: 767px) {
   form {
     grid-template-areas:
       "nombre area"
@@ -26,7 +36,7 @@
   .eventos {
     grid-template-areas:
       "img div1"
-      "div2 map";
+      "div2 div2";
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
@@ -53,13 +63,23 @@
     row-gap: 30px;
     align-self: center;
   }
+  .pagDisco {
+    margin: 2% 5%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "titulo titulo"
+      "img div "
+      "img div"
+      "banda aside";
+    align-content: center;
+  }
 }
-@media(max-width: 991px){
-nav{
-  background-image: linear-gradient(90deg, $color2, #51175d);
-  padding: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
+@media (max-width: 991px) {
+  nav {
+    background-image: linear-gradient(90deg, $color2, #51175d);
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }

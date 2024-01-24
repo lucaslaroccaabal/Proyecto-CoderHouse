@@ -54,37 +54,42 @@ h4 {
 .disco {
   height: 100%;
   width: 90%;
-  text-align: center;
   text-decoration: none;
   background-color: #ecaf2e;
   border-radius: 3px;
-}
-.disco img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  transition: all 0.4s;
 }
 .disco a {
-  color: #251029;
-  text-align: center;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
+}
+.disco a img {
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  filter: grayscale(0.5);
+  transition: all 0.4s;
 }
 .disco a h3 {
-  height: 40px;
-  font-size: 1.2rem;
+  text-align: center;
+  color: #251029;
+  font-size: 1.3rem;
+  word-spacing: 1px;
 }
-.disco :hover {
-  background-color: #ab7a10;
+
+.disco:hover {
+  background-color: #eda70e;
   border-radius: 3px;
 }
-.disco img:hover {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+.disco:hover img {
+  filter: none;
+}
+.disco:hover h3 {
+  font-weight: 800;
 }
 
 /* Bandas */
@@ -102,13 +107,7 @@ h4 {
   text-decoration: none;
   background-color: #ecaf2e;
   border-radius: 3px;
-}
-.banda img {
-  height: 220px;
-  width: 100%;
-  object-fit: cover;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  transition: all 0.4s;
 }
 .banda a {
   color: #251029;
@@ -118,16 +117,32 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
 }
-.banda a h3 {
-  font-size: 1.2rem;
+.banda a img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 20%;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  filter: grayscale(0.5);
+  transition: all 0.4s;
 }
-.banda :hover {
-  background-color: #ab7a10;
+.banda a h3 {
+  text-align: center;
+  color: #251029;
+  font-size: 1.3rem;
+  word-spacing: 1px;
+}
+
+.banda:hover {
+  background-color: #eda70e;
   border-radius: 3px;
 }
-.banda img:hover {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+.banda:hover img {
+  filter: none;
+}
+.banda:hover h3 {
+  font-weight: 800;
 }
 
 /* Carrussel index */
@@ -329,7 +344,11 @@ form textarea:focus {
   padding: 0px 5px;
 }
 .div1 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.div1 p span {
+  font-weight: 800;
 }
 
 .eventos img {
@@ -340,23 +359,17 @@ form textarea:focus {
 
 .div2 {
   grid-area: div2;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   text-align: center;
-  align-self: center;
   padding: 0px 5px;
-}
-.div2 p {
-  font-size: 0.8rem;
 }
 
 .eventos iframe {
   grid-area: map;
   width: 100%;
   justify-self: center;
-}
-
-.div2 p,
-.div1 p {
-  font-size: 1rem;
 }
 
 /* quienes somos index */
@@ -379,7 +392,7 @@ form textarea:focus {
 .divQuienesSomos p {
   grid-area: p;
   color: #ecaf2e;
-  font-size: 0.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 .divQuienesSomos img {
@@ -398,6 +411,7 @@ form textarea:focus {
   display: grid;
   gap: 10px;
   grid-template-areas: "titulo" "img" "div" "banda" "aside";
+  padding: 10px;
 }
 .pagDisco h1 {
   grid-area: titulo;
@@ -457,23 +471,6 @@ form textarea:focus {
   height: 100%;
 }
 
-@media (min-width: 767px) {
-  .pagDisco {
-    margin: 2% 5%;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: " titulo titulo" "img div " "img div" "banda aside";
-    align-content: center;
-  }
-}
-@media (min-width: 1024px) {
-  .pagDisco {
-    margin: 2% 5%;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
-    grid-template-areas: "img img img titulo titulo titulo" "img img img div div banda" "img img img div div aside";
-  }
-}
 @media (min-width: 400px) {
   .divDiscos {
     grid-template-columns: 1fr 1fr;
@@ -486,13 +483,19 @@ form textarea:focus {
   .divBandas {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .pagDisco {
+    margin: 2% 5%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
+    grid-template-areas: "img img img titulo titulo titulo" "img img img div div banda" "img img img div div aside";
+  }
 }
 @media (min-width: 767px) {
   form {
     grid-template-areas: "nombre area" "apellido area" "email area" "enviar borrar";
   }
   .eventos {
-    grid-template-areas: "img div1" "div2 map";
+    grid-template-areas: "img div1" "div2 div2";
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
@@ -512,6 +515,13 @@ form textarea:focus {
     margin: 30px;
     row-gap: 30px;
     align-self: center;
+  }
+  .pagDisco {
+    margin: 2% 5%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo titulo" "img div " "img div" "banda aside";
+    align-content: center;
   }
 }
 @media (max-width: 991px) {

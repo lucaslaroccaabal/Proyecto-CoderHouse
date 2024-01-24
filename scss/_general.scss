@@ -6,11 +6,11 @@
 }
 
 body {
-  background-image: radial-gradient(circle, rgb(122, 19, 106), $color2);
+  background-image: radial-gradient(circle, $color3, $color2);
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 30px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 p {
@@ -21,14 +21,14 @@ p {
 h1 {
   color: $color1;
   font-size: 2rem;
-  @include title
+  @include title;
 }
-h2{
+h2 {
   color: $color1;
   font-size: 2rem;
   text-align: center;
 }
-h4{
+h4 {
   color: $color1;
   font-size: 1.6rem;
   text-align: center;
