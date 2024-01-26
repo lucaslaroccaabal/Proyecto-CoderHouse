@@ -15,6 +15,14 @@
   background-color: $color1;
   border-radius: 3px;
   transition: all 0.4s;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
 
   a {
     color: $color2;
