@@ -11,6 +11,7 @@
   grid-template-areas: "titulo" "img" "div" "banda" "aside";
   padding: 10px;
   h1 {
+    align-self: center;
     grid-area: titulo;
     background-color: $color1;
     color: $color2;

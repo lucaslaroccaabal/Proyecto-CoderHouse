@@ -424,6 +424,31 @@ form textarea:focus {
   border-radius: 10px;
 }
 
+.carrusel img:nth-child(1) {
+  animation: carrusel 5s linear infinite;
+  animation-delay: 0s;
+}
+
+.carrusel img:nth-child(2) {
+  animation: carrusel 5s linear infinite;
+  animation-delay: 1s;
+}
+
+.carrusel img:nth-child(3) {
+  animation: carrusel 5s linear infinite;
+  animation-delay: 2s;
+}
+
+.carrusel img:nth-child(4) {
+  animation: carrusel 5s linear infinite;
+  animation-delay: 3s;
+}
+
+.carrusel img:nth-child(5) {
+  animation: carrusel 5s linear infinite;
+  animation-delay: 4s;
+}
+
 /* pag disco */
 .tituloDisco {
   color: #ecaf2e;
@@ -437,6 +462,7 @@ form textarea:focus {
   padding: 10px;
 }
 .pagDisco h1 {
+  align-self: center;
   grid-area: titulo;
   background-color: #ecaf2e;
   color: #251029;
@@ -499,20 +525,6 @@ form textarea:focus {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1024px) {
-  .divDiscos {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .divBandas {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .pagDisco {
-    margin: 2% 5%;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
-    grid-template-areas: "img img img titulo titulo titulo" "img img img div div banda" "img img img div div aside";
-  }
-}
 @media (min-width: 767px) {
   form {
     grid-template-areas: "nombre area" "apellido area" "email area" "enviar borrar";
@@ -555,29 +567,19 @@ form textarea:focus {
     border-bottom-right-radius: 20px;
   }
 }
-.carrusel img:nth-child(1) {
-  animation: carrusel 5s linear infinite;
-  animation-delay: 0s;
-}
-
-.carrusel img:nth-child(2) {
-  animation: carrusel 5s linear infinite;
-  animation-delay: 1s;
-}
-
-.carrusel img:nth-child(3) {
-  animation: carrusel 5s linear infinite;
-  animation-delay: 2s;
-}
-
-.carrusel img:nth-child(4) {
-  animation: carrusel 5s linear infinite;
-  animation-delay: 3s;
-}
-
-.carrusel img:nth-child(5) {
-  animation: carrusel 5s linear infinite;
-  animation-delay: 4s;
+@media (min-width: 1024px) {
+  .divDiscos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .divBandas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pagDisco {
+    margin: 2% 5%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: "img img img titulo titulo titulo" "img img img div div banda" "img img img div div aside";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

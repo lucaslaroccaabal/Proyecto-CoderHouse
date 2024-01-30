@@ -4,26 +4,6 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .divDiscos {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .divBandas {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .pagDisco {
-    margin: 2% 5%;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
-    grid-template-areas:
-      "img img img titulo titulo titulo"
-      "img img img div div banda"
-      "img img img div div aside";
-  }
-}
-
 @media (min-width: 767px) {
   form {
     grid-template-areas:
@@ -81,5 +61,24 @@
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .divDiscos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .divBandas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .pagDisco {
+    margin: 2% 5%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-areas:
+      "img img img titulo titulo titulo"
+      "img img img div div banda"
+      "img img img div div aside";
   }
 }
